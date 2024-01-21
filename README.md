@@ -68,7 +68,7 @@ OpenAI will only generate a limited set of image dimentions, your options are:
 
 1792x1024
 
-### **Adding an into image and video**
+### **Adding an intro image and video**
 
 This could be more elegant, but as of right now, if you'd like to add a sound and image to the beginning of your video, such as a logo, you'll need to do it this way.
 
