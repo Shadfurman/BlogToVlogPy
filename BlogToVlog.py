@@ -30,13 +30,13 @@ screen_height = 1024    # 1024x1024, 1024x1792 or 1792x1024
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption(text_file)
 
-if not os.path.exists(text_file):
+if not os.path.isfile(f"/{text_file}"):
     with open(text_file, 'r') as file:
         file_contents = file.read()
         print(f"Reading text file {text_file}.")
 else:
     print(f"{text_file} not found.")
-    
+
 paragraphs = [paragraph.strip() for paragraph in file_contents.split(paragraph_delineator) if paragraph.strip()]
 
 # Create the directory if it doesn't exist
